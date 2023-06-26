@@ -1,0 +1,195 @@
+:root{
+    --primary-color: #434455;
+    --secondory-color: #2E2F42; 
+    --primary-background: #FFFFFF;
+    --sekondory-background: #2E2F42;
+    --btn-hero-background: #4D5AE5;
+    --active-color: #404BBF;
+    --section-description-color: #434455;
+    --footer-description-color: #F4F4FD;
+    --hero-font-color: #FFFFFF;
+    --btn-menu-color: #4D5AE5;
+    --btn-menu-background: #F4F4FD;
+    --active-font-color:#ffffff;
+    --logo-font-color:#4d5ae5;
+    --section-team-beckground: #F4F4FD;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: var(--primary-background);
+    color: var(--primary-color);
+
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+
+}
+
+/* ================= HEADER ====================== */
+.logo{
+    font-family: 'Raleway',sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--logo-font-color);
+}
+
+.logo-studio{
+   color: #2e2f42; 
+}
+
+.logo:hover,
+.logo:focus {
+    color: var(--active-color)
+}
+
+.menu-item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondory-color);
+}
+
+.menu-item:hover,
+.menu-item:focus {
+    color: var(--active-color);
+}
+
+.contact {
+    font-style: normal;
+}
+
+.contact-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+}
+.contact-item:hover,
+.contact-item:focus {
+    color: var(--active-color);
+}
+/* ================= /HEADER ====================== */
+
+/* ================= HERO ====================== */
+.hero{
+    background: var(--sekondory-background);
+}
+.hero-topic{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--hero-font-color);
+}
+
+.btn-hero{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--hero-font-color);
+    background: var(--btn-hero-background);
+    cursor: pointer;
+}
+
+.btn-hero:hover,
+.btn-hero:focus {
+    background: var(--active-color);
+}
+/* ================= /HERO ====================== */
+
+/* ================= MAIN ====================== */
+.section-secondary-topic{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--secondory-color);
+}
+
+.section-description{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--section-description-color);
+}
+
+
+.section-primary-topic{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--secondory-color);
+}
+
+.section-team {
+    background: var(--section-team-beckground);
+
+}
+
+.team-item{
+    background-color: #FFFFFF;
+}
+
+/* ================= /MAIN ====================== */
+
+/* ================= FOOTER ====================== */
+.footer {
+    background-color: var(--sekondory-background);
+}
+.footer-description {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--footer-description-color);
+}
+
+.logo-footer{
+    color:#f4f4fd;
+}
+/* ================= /FOOTER =====================FOOTER */
+
+
+/* ================= PORTFOLIO =====================*/
+.btn-menu{
+    font-family: 'Roboto', sans-serif ;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--btn-menu-color);
+    background: var(--btn-menu-background);
+    cursor: pointer;
+}
+
+.btn-menu:hover,
+.btn-menu:focus {
+    color: var(--active-font-color);
+    background: var(--active-color);
+}
+
+/* ================= /PORTFOLIO =====================*/
