@@ -15,21 +15,53 @@
     --section-team-beckground: #F4F4FD;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     background: var(--primary-background);
     color: var(--primary-color);
-
 }
 
-.list {
-    list-style: none;
-}
+/* ======================== RESET ================= */
 
 .link {
     text-decoration: none;
-
+    color: currentColor;
 }
+
+button {
+    color: currentColor;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/* ======================== /RESET ================= */
+
 
 /* ================= HEADER ====================== */
 .logo{
@@ -106,7 +138,7 @@ body{
     letter-spacing: 0.04em;
     color: var(--hero-font-color);
     background: var(--btn-hero-background);
-    cursor: pointer;
+    
 }
 
 .btn-hero:hover,
@@ -183,7 +215,7 @@ body{
     letter-spacing: 0.04em;
     color: var(--btn-menu-color);
     background: var(--btn-menu-background);
-    cursor: pointer;
+    
 }
 
 .btn-menu:hover,
