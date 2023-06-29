@@ -13,6 +13,13 @@
     --active-font-color:#ffffff;
     --logo-font-color:#4d5ae5;
     --section-team-beckground: #F4F4FD;
+    --cornflower: #E7E9FC;
+
+    /* others */
+
+    --btn-border-radsus: 4px;
+    --indend: 24px;
+    --items: 4;
 }
 
 body {
@@ -45,6 +52,8 @@ ul, ol {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .visually-hidden {
@@ -63,8 +72,71 @@ img {
 /* ======================== /RESET ================= */
 
 
+
+.values {
+    padding-top: 120px;
+}
+.conteiner {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
+    outline-offset: -2px;
+
+}
+
+.section {
+    padding-bottom: 120px;
+}  
+
+.portfolio-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* flex grid*/
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent, 24px);
+}
+
+.card-set-items{
+    flex-basis: calc((100% - var(--indent, 24px)) * (var(--items, 4) -1) / var(--items, 4));
+}
+
+
 /* ================= HEADER ====================== */
+
+.header {
+    border: 1px solid var(--cornflower);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+
 .logo{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 76px;
+
+    color: var(--logo-font-color);
+
     font-family: 'Raleway',sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -72,7 +144,7 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--logo-font-color);
+    
 }
 
 .logo-studio{
@@ -84,13 +156,29 @@ img {
     color: var(--active-color)
 }
 
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu .nav-item+.nav-item {
+    margin-left: 40px;
+}
+
 .menu-item {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    color: var(--secondory-color);
+
+
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--secondory-color);
+    
 }
 
 .menu-item:hover,
@@ -99,45 +187,85 @@ img {
 }
 
 .contact {
+    margin-left: auto;
     font-style: normal;
 }
 
+.contact-list {
+    display: flex;
+}
+
+
+
+
+.contact .contact-info + .contact-info {
+    margin-left: 40px;
+}
+
+
 .contact-item {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+
+
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--primary-color);
 }
 .contact-item:hover,
 .contact-item:focus {
     color: var(--active-color);
 }
+
 /* ================= /HEADER ====================== */
 
 /* ================= HERO ====================== */
-.hero{
+.hero-bgr{
     background: var(--sekondory-background);
+    text-align: center;
 }
+
 .hero-topic{
+    display: block;
+    width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+
+    color: var(--hero-font-color);
+
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
-    color: var(--hero-font-color);
+    
 }
 
 .btn-hero{
+    display: inline-block;
+    min-width: 169px;
+    min-height: 56px;
+    padding: 16px 32px;
+
+    border-radius: var(--btn-border-radsus);
+    background: var(--logo-font-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    color: var(--hero-font-color);
+    background: var(--btn-hero-background);
+
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: var(--hero-font-color);
-    background: var(--btn-hero-background);
+
+   
     
 }
 
@@ -152,7 +280,6 @@ img {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--secondory-color);
@@ -161,7 +288,6 @@ img {
 .section-description{
     font-size: 16px;
     line-height: 1.5;
-    text-align: center;
     letter-spacing: 0.02em;
     color: var(--section-description-color);
 }
@@ -186,13 +312,47 @@ img {
     background-color: #FFFFFF;
 }
 
+
+
+.values-list {
+    flex-wrap: nowrap;
+}
+.values-topic {
+    margin-bottom: 8px;
+}
+
+.examples-work-list{
+    --items: 3;
+}
+
+.examples-work-topic{
+    margin-bottom: 72px;
+}
+
+.team-topic {
+    margin-bottom: 72px;
+}
+
+.team-wraper{
+    padding: 32px 10px;
+}
+
+.team-name {
+    margin-bottom: 8px;
+}
 /* ================= /MAIN ====================== */
 
 /* ================= FOOTER ====================== */
-.footer {
+.footer-bgr {
     background-color: var(--sekondory-background);
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
 .footer-description {
+    max-width: 264px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -202,19 +362,41 @@ img {
 .logo-footer{
     color:#f4f4fd;
 }
+
+.indent-footer-logo {
+    padding-bottom: 0;
+    margin-bottom: 16px;
+}
 /* ================= /FOOTER =====================FOOTER */
 
 
 /* ================= PORTFOLIO =====================*/
+.btn-list {
+    --items: 5;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 72px;
+}
+
 .btn-menu{
+
+    min-width: 69px;
+    min-height: 48px;
+    padding: 12px 24px;
+
+
+    border-radius: var(--btn-border-radsus);
+    border: 1px solid var(--cornflower);
+
+    color: var(--btn-menu-color);
+    background: var(--btn-menu-background);
+
     font-family: 'Roboto', sans-serif ;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: var(--btn-menu-color);
-    background: var(--btn-menu-background);
     
 }
 
@@ -222,6 +404,18 @@ img {
 .btn-menu:focus {
     color: var(--active-font-color);
     background: var(--active-color);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
+.example-list {
+    --items: 3;
+}
+
+.example-item-wrape {
+    padding: 32px 10px;
+}
+
+.examle-item-topic{
+    margin-bottom: 8px;
+}
 /* ================= /PORTFOLIO =====================*/
