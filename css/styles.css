@@ -380,11 +380,11 @@ img {
 }
 
 .logo-footer{
-    display: inline-block;
     color:#f4f4fd;
 }
 
 .indent-footer-logo {
+    display: inline-block;
     padding-bottom: 0;
     margin-bottom: 16px;
 }
