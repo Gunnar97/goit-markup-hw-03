@@ -18,7 +18,7 @@
     /* others */
 
     --btn-border-radsus: 4px;
-    --indend: 24px;
+    --indent: 24px;
     --items: 4;
 }
 
@@ -102,12 +102,11 @@ img {
 
 .card-set {
     display: flex;
-    flex-wrap: wrap;
-    gap: var(--indent, 24px);
+    gap: var(--indent);
 }
 
 .card-set-items{
-    flex-basis: calc((100% - var(--indent, 24px)) * (var(--items, 4) -1) / var(--items, 4));
+    flex-basis: calc((100% - var(--indent)) * (var(--items) - 1) / (var(--items)));
 }
 
 
