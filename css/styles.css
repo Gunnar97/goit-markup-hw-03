@@ -76,7 +76,7 @@ img {
 .values {
     padding-top: 120px;
 }
-.conteiner {
+.container {
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
@@ -117,7 +117,7 @@ img {
     border: 1px solid var(--cornflower);
 }
 
-.header {
+.header-wrap {
     display: flex;
     align-items: center;
     
@@ -159,11 +159,11 @@ img {
 .nav-menu {
     display: flex;
     align-items: center;
+    gap: 40px;
 }
 
-.nav-menu .nav-item+.nav-item {
-    margin-left: 40px;
-}
+
+
 
 .menu-item {
     display: block;
@@ -193,14 +193,12 @@ img {
 
 .contact-list {
     display: flex;
+    gap: 40px;
 }
 
 
 
 
-.contact .contact-info + .contact-info {
-    margin-left: 40px;
-}
 
 
 .contact-item {
@@ -228,11 +226,12 @@ img {
 .hero-bgr{
     background: var(--sekondory-background);
     text-align: center;
+    padding: 188px 0;
 }
 
 .hero-topic{
     display: block;
-    width: 496px;
+    max-width: 496px;
     margin: 0 auto;
     margin-bottom: 48px;
 
@@ -247,11 +246,14 @@ img {
 }
 
 .btn-hero{
-    display: inline-block;
+    display: block;
     min-width: 169px;
-    min-height: 56px;
+    height: 56px;
     padding: 16px 32px;
 
+    margin: auto;
+
+    border: none;
     border-radius: var(--btn-border-radsus);
     background: var(--logo-font-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -334,7 +336,7 @@ img {
 }
 
 .team-wraper{
-    padding: 32px 10px;
+    padding: 32px 16px;
 }
 
 .team-name {
@@ -345,6 +347,7 @@ img {
 /* ================= FOOTER ====================== */
 .footer-bgr {
     background-color: var(--sekondory-background);
+    padding: 100px 0;
 }
 
 .footer {
@@ -364,6 +367,7 @@ img {
 }
 
 .indent-footer-logo {
+    display: inline-block;
     padding-bottom: 0;
     margin-bottom: 16px;
 }
@@ -405,14 +409,18 @@ img {
     color: var(--active-font-color);
     background: var(--active-color);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    border: 1px solid transparent;
 }
+
 
 .example-list {
     --items: 3;
+    row-gap: 48px;
 }
 
 .example-item-wrape {
-    padding: 32px 10px;
+    padding: 32px 16px;
+    border: 1px solid var(--cornflower)
 }
 
 .examle-item-topic{
