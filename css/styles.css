@@ -370,10 +370,7 @@ img {
     padding: 100px 0;
 }
 
-.footer {
-    display: flex;
-    flex-direction: column;
-}
+
 .footer-description {
     max-width: 264px;
     font-size: 16px;
