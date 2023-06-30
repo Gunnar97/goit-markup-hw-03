@@ -328,8 +328,11 @@ img {
 
 
 .values-list {
-    flex-wrap: nowrap;
+    --items: 4;
+
 }
+
+
 .values-topic {
     margin-bottom: 8px;
 }
@@ -340,6 +343,10 @@ img {
 
 .examples-work-topic{
     margin-bottom: 72px;
+}
+
+.team-list{
+    --items: 4;
 }
 
 .team-topic {
@@ -425,7 +432,6 @@ img {
 
 
 .example-list {
-    --card-set-gap: 24px;
     --items: 3;
     row-gap: 48px
 }
