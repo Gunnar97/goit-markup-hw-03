@@ -391,7 +391,6 @@ img {
     display: flex;
     justify-content: center;
     gap: 24px;
-    align-items: center;
     margin-bottom: 72px;
 }
 
@@ -425,6 +424,7 @@ img {
 
 
 .example-list {
+    --card-set-gap: 24px;
     --items: 3;
 }
 
