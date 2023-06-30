@@ -101,21 +101,13 @@ img {
 /* flex grid*/
 
 .card-set {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1 * var(--card-set-gap));
-    margin-top: calc(-1 * var(--card-set-gap));
+    gap: var(--card-set-gap);
 }
 
 .card-set-items{
-    flex-basis: calc(100% / var(--items) - var(--card-set-gap));
-    margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);
-    
+    flex-basis: calc((100% - var(--card-set-gap) * (var(--items) - 1)) / var(--items));
 }
 
 
